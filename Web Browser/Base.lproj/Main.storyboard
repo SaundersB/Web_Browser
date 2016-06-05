@@ -19,11 +19,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Niy-xm-yOH">
-                                <rect key="frame" x="5" y="0.0" width="560" height="626"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Niy-xm-yOH">
+                                <rect key="frame" x="162" y="6" width="560" height="600"/>
                                 <subviews>
-                                    <navigationBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vdq-Fa-cDz">
-                                        <rect key="frame" x="0.0" y="0.0" width="560" height="44"/>
+                                    <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vdq-Fa-cDz">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="77"/>
                                         <items>
                                             <navigationItem title="Web Browser" id="erH-d9-NUV">
                                                 <barButtonItem key="leftBarButtonItem" title="Back" id="Nmd-Vz-EeS">
@@ -46,25 +46,24 @@
                                             </navigationItem>
                                         </items>
                                     </navigationBar>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E38-TK-uJx">
-                                        <rect key="frame" x="0.0" y="44" width="560" height="30"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E38-TK-uJx">
+                                        <rect key="frame" x="0.0" y="85" width="560" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <webView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wOb-sX-QBS">
-                                        <rect key="frame" x="0.0" y="74" width="560" height="552"/>
+                                    <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wOb-sX-QBS">
+                                        <rect key="frame" x="0.0" y="123" width="560" height="477"/>
                                         <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
                                     </webView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="wOb-sX-QBS" firstAttribute="leading" secondItem="Niy-xm-yOH" secondAttribute="leading" constant="-20" id="4ta-zs-BiZ"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="Niy-xm-yOH" secondAttribute="trailing" constant="20" id="G16-gd-fsP"/>
-                            <constraint firstItem="Niy-xm-yOH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="rOt-y7-PXt"/>
+                            <constraint firstItem="Niy-xm-yOH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="H66-VF-RDv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Niy-xm-yOH" secondAttribute="trailing" id="fTw-HI-xOX"/>
+                            <constraint firstItem="Niy-xm-yOH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="10" id="knV-Wo-CKt"/>
+                            <constraint firstItem="Niy-xm-yOH" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="wCa-gP-SEq"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -80,7 +79,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="352" y="419"/>
+            <point key="canvasLocation" x="351" y="411"/>
         </scene>
     </scenes>
 </document>
