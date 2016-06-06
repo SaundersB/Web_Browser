@@ -20,17 +20,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Niy-xm-yOH">
-                                <rect key="frame" x="162" y="6" width="560" height="600"/>
+                                <rect key="frame" x="6" y="5" width="560" height="600"/>
                                 <subviews>
-                                    <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vdq-Fa-cDz">
+                                    <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vdq-Fa-cDz">
                                         <rect key="frame" x="0.0" y="0.0" width="560" height="77"/>
                                         <items>
                                             <navigationItem title="Web Browser" id="erH-d9-NUV">
-                                                <barButtonItem key="leftBarButtonItem" title="Back" id="Nmd-Vz-EeS">
-                                                    <connections>
-                                                        <action selector="backAction:" destination="BYZ-38-t0r" id="izW-Ss-qsb"/>
-                                                    </connections>
-                                                </barButtonItem>
+                                                <leftBarButtonItems>
+                                                    <barButtonItem title="Back" id="Nmd-Vz-EeS">
+                                                        <connections>
+                                                            <action selector="backAction:" destination="BYZ-38-t0r" id="izW-Ss-qsb"/>
+                                                        </connections>
+                                                    </barButtonItem>
+                                                    <barButtonItem title="Home" id="3Dr-cv-tS7">
+                                                        <connections>
+                                                            <action selector="loadHomePage:" destination="BYZ-38-t0r" id="f0T-TF-Oei"/>
+                                                        </connections>
+                                                    </barButtonItem>
+                                                </leftBarButtonItems>
                                                 <rightBarButtonItems>
                                                     <barButtonItem title="Go" id="XI3-28-7Os">
                                                         <connections>
@@ -46,7 +53,7 @@
                                             </navigationItem>
                                         </items>
                                     </navigationBar>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E38-TK-uJx">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E38-TK-uJx">
                                         <rect key="frame" x="0.0" y="85" width="560" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -62,7 +69,7 @@
                         <constraints>
                             <constraint firstItem="Niy-xm-yOH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="H66-VF-RDv"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Niy-xm-yOH" secondAttribute="trailing" id="fTw-HI-xOX"/>
-                            <constraint firstItem="Niy-xm-yOH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="10" id="knV-Wo-CKt"/>
+                            <constraint firstItem="Niy-xm-yOH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="20" id="knV-Wo-CKt"/>
                             <constraint firstItem="Niy-xm-yOH" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="wCa-gP-SEq"/>
                         </constraints>
                     </view>
